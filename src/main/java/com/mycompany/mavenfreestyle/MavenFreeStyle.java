@@ -15,10 +15,10 @@ public class MavenFreeStyle {
         System.out.println("Hello World!");
     }
     
-    public int fibonacci(int a){	
-	if (a >= 2){
-            return (fibonacci(a-1) + fibonacci(a-2));
-	}
-	return 0;
+    public int fibonacci(int n){	
+	if ((n == 0) || (n == 1))
+            return n;
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
